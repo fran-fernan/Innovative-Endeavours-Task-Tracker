@@ -37,7 +37,7 @@
 
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Logo</a>
+            <a href="#" class="brand-logo">Innovative Endeavors Task Tracker</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a class="tablinks" onclick="openTab(event, 'tasks')" id="<?php echo $defaultOpen; ?>">tasks</a>
                 </li>
@@ -49,8 +49,6 @@
     </nav>
 
     <div id="tasks" class="tabcontent">
-        <h5 style="text-align:center;">Tasks Completed Today</h5>
-
         <div class="container jobs row">
             <form action="submit-job.php" method="post">
                 <div class="input-field col s2">
@@ -81,95 +79,14 @@
                         </label></p>
                 </div>
                 <div class="input-field col s5">
-                    <select name="jobs[]" multiple>
-                        <option value="" disabled>Inventory Jobs</option>
-                        <option value="Break boxes">Break boxes</option>
-                        <option value="Stock shelves">Stock shelves</option>
-                        <option value="Unpack boxes">Unpack boxes</option>
-                        <option value="Items in fridge">Items in fridge</option>
-                        <option value="Items in cabinet">Items in cabinet</option>
-                        <option value="Calculations">Calculations</option>
-                        <option value="Write items">Write items</option>
-                        <option value="Collect BKF trays">Collect BKF trays</option>
-                    </select>
-                    <label>List of Breakfast Club Skills</label><br>
-                    <select name="jobs[]" multiple>
-                        <option value="" disabled>Food Prep Jobs</option>
-                        <option value="Prepare sandwiches">Prepare sandwiches</option>
-                        <option value="Spread on bread">Spread on bread</option>
-                        <option value="Cut veggies">Cut veggies</option>
-                        <option value="Prepare bagels">Prepare bagels</option>
-                        <option value="Prepare parfaits">Prepare parfaits</option>
-                        <option value="Wash foods">Wash foods</option>
-                        <option value="Wash trays">Wash trays</option>
-                        <option value="Wipe tables">Wipe tables</option>
-                    </select><br>
-                    <select name="jobs[]" multiple>
-                        <option value="" disabled>Counting Jobs</option>
-                        <option value="Count items">Count items</option>
-                        <option value="Sort items">Sort items</option>
-                        <option value="Organize items">Organize items</option>
-                        <option value="Counter sheet">Counter sheet</option>
-                    </select><br>
-                    <select name="jobs[]" multiple>
-                        <option value="" disabled>Bagging Jobs</option>
-                        <option value="Bag carrots">Bag carrots</option>
-                        <option value="Bag cheerios">Bag cheerios</option>
-                        <option value="Bag peppers">Bag peppers</option>
-                        <option value="Wash foods">Wash foods</option>
-                        <option value="Wash trays">Wash trays</option>
-                        <option value="Wash tables">Wash tables</option>
-                    </select>
-                </div>
-                <div class="input-field col s5">
-                    <select name="jobs[]" multiple>
-                        <option value="" disabled>Craft Jobs</option>
-                        <option value="Punch cards">Punch cards</option>
-                        <option value="Glue items">Glue items</option>
-                        <option value="String beads">String beads</option>
-                        <option value="Paint items">Paint items</option>
-                        <option value="String ornament">String ornament</option>
-                        <option value="Cut out patterns/shapes">Cut out patterns/shapes</option>
-                        <option value="Count out and categorize parts">Count out and categorize parts</option>
-                        <option value="Create kits">Create kits</option>
-                        <option value="Clean up work area">Clean up work area</option>
-                        <option value="Use glue gun">Use glue gun</option>
-                    </select>
-                    <label>List of Co-op Class Skills</label><br>
-                    <select name="jobs[]" multiple>
-                        <option value="" disabled>Laundry Jobs</option>
-                        <option value="Load washer">Load washer</option>
-                        <option value="Load dryer">Load dryer</option>
-                        <option value="Fold clothing">Fold clothing</option>
-                    </select><br>
-                    <select name="jobs[]" multiple>
-                        <option value="" disabled>Fleece Jobs</option>
-                        <option value="Cut freehand">Cut freehand</option>
-                        <option value="Cut w/ template">Cut w/ template</option>
-                        <option value="Tags in bags">Tags in bags</option>
-                        <option value="Pins on bags">Pins on bags</option>
-                        <option value="Looping">Looping</option>
-                        <option value="Bagging">Bagging</option>
-                        <option value="Braiding">Braiding</option>
-                        <option value="Cutting">Cutting</option>
-                        <option value="Pinning">Pinning</option>
-                        <option value="BD Patterns">BD Patterns</option>
-                        <option value="Beading">Beading</option>
-                        <option value="Filing">Filing</option>
-                        <option value="Hush ups">Hush ups</option>
-                        <option value="Sorting">Sorting</option>
-                        <option value="Folding">Folding</option>
-                        <option value="Inventory">Inventory</option>
-                        <option value="Stamping">Stamping</option>
-                        <option value="Tagging">Tagging</option>
-                    </select>
-                    <div style="line-height:50%;">
-                        <br>
-                    </div>
                     <div class="input-field col s12">
                         <input name="jobbox" id="last_name" type="text" class="validate">
                         <label for="last_name">Other Jobs</label>
                     </div>
+                </div>
+                <div class="input-field col s5">
+                    <center><input type="submit" class="button" id="button" value="Submit" disabled></center>
+
                 </div>
                 <div class="submit input-field col s12">
                     <center><input type="submit" class="button" id="button" value="Submit" disabled></center>
