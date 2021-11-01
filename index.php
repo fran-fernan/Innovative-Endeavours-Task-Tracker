@@ -27,6 +27,7 @@
         }
         ?>
 
+    <!--
     <div id="wrapper">
 
         <?php
@@ -34,6 +35,7 @@
             ?>
 
     </div>
+    -->
 
     <nav>
         <div class="nav-wrapper">
