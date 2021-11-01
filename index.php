@@ -90,6 +90,11 @@
                     <center><input type="submit" class="button" id="button" value="Start Timer" disabled></center>
 
                 </div>
+                <div class="col s12">
+                    <center>
+                        <h3>00:00:00</h3>
+                    </center>
+                </div>
 
             </form>
         </div>
