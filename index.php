@@ -37,7 +37,7 @@
 
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Innovative Endeavors Task Tracker</a>
+            <a href="#" class="brand-logo"> Innovative Endeavors Task Tracker</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a class="tablinks" onclick="openTab(event, 'tasks')" id="<?php echo $defaultOpen; ?>">tasks</a>
                 </li>
@@ -79,18 +79,16 @@
                         </label></p>
                 </div>
                 <div class="input-field col s5">
-                    <div class="input-field col s12">
+                    <div class="input-field col s6">
                         <input name="jobbox" id="last_name" type="text" class="validate">
-                        <label for="last_name">Other Jobs</label>
+                        <label for="last_name">Task Number</label>
                     </div>
                 </div>
                 <div class="input-field col s5">
-                    <center><input type="submit" class="button" id="button" value="Submit" disabled></center>
+                    <center><input type="submit" class="button" id="button" value="Start Timer" disabled></center>
 
                 </div>
-                <div class="submit input-field col s12">
-                    <center><input type="submit" class="button" id="button" value="Submit" disabled></center>
-                </div>
+
             </form>
         </div>
     </div>
