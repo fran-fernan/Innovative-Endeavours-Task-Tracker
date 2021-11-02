@@ -39,7 +39,7 @@
 
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">&nbsp;Innovative Endeavors Task Tracker</a>
+            <a href="#" class="brand-logo">&nbsp;&nbsp;&nbsp;Innovative Endeavors Task Tracker</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a class="tablinks" onclick="openTab(event, 'tasks')" id="<?php echo $defaultOpen; ?>">tasks</a>
                 </li>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="col s12">
                     <center>
-                        <h3>00:00:00</h3>
+                        <h1>00:00:00</h1>
                     </center>
                 </div>
 

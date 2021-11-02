@@ -1,166 +1,173 @@
-body{
-    background-image: url("../images/background.jpg");
-    background-size: auto;
-    background-repeat: repeat;
+body {
+  background-image: url("../images/background.jpg");
+  background-size: auto;
+  background-repeat: repeat;
 }
-table
-{
-    border-collapse: collapse;
-    width: 50%;
-    margin: auto;
-}
-
-th, td
-{
-    text-align: center;
-    padding: 5px 6px 5px 6px;
-    min-width: 150px;
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: auto;
 }
 
-tr:nth-child(even){background-color: rgba(188,253,145,.7)}
+th,
+td {
+  text-align: center;
+  padding: 5px 6px 5px 6px;
+  min-width: 150px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(188, 253, 145, 0.7);
+}
 
 th {
-    background-color: #3e8e41;
-    color: white;
-    font-size: 20px;
+  background-color: #3e8e41;
+  color: white;
+  font-size: 20px;
 }
 
 .corner1 {
-    border-radius: 12px 0px 0px 0px;
+  border-radius: 12px 0px 0px 0px;
 }
 
 .corner2 {
-    border-radius: 0px 12px 0px 0px;
+  border-radius: 0px 12px 0px 0px;
 }
 
 .corner3 {
-    border-radius: 0px 0px 12px 0px;
+  border-radius: 0px 0px 12px 0px;
 }
 
 .corner4 {
-    border-radius: 0px 0px 0px 12px;
+  border-radius: 0px 0px 0px 12px;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: verdana;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: verdana;
 }
 
 h1 {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 
 h2 {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
 h3 {
-    color: black;
-    text-align: center;
-    font-size: 25px;
+  color: black;
+  text-align: center;
+  font-size: 25px;
 }
 
 h4 {
-    color: black;
-    font-size: 20px;
-    text-align: left;
+  color: black;
+  font-size: 20px;
+  text-align: left;
 }
 
 h5 {
-    font-weight: normal;
-    font-size: 16px;
+  font-weight: normal;
+  font-size: 16px;
 }
 
 p {
-    font-size: 10px;
-    text-align: left;
-    margin: 0.1em;
+  font-size: 10px;
+  text-align: left;
+  margin: 0.1em;
 }
 
 /* Style the tab */
 .tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+  background-color: #ccc;
 }
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    background-color: #f6f6f6;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #f6f6f6;
 }
 
 .timeparent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .timebox {
-    display: inline-block;
-    margin: auto;
-    background: linear-gradient(rgba(155,187,134,1) 20%, rgba(128,193,85,1) 80%); 
-    padding: 10px 50px;
-    border-radius: 12px;
+  display: inline-block;
+  margin: auto;
+  background: linear-gradient(
+    rgba(155, 187, 134, 1) 20%,
+    rgba(128, 193, 85, 1) 80%
+  );
+  padding: 10px 50px;
+  border-radius: 12px;
 }
 
 .parent {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .names {
-    padding: 20px;
-    width: 15%;
-    padding: 0px 0px 0px 100px;
+  padding: 20px;
+  width: 15%;
+  padding: 0px 0px 0px 100px;
 }
 
 .jobs {
-
 }
 
 .job1 {
-    float: left;
-    width: 50%;
+  float: left;
+  width: 50%;
 }
 
 .loginDiv {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .login2 {
-    padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 20px;
 }
 
 .author {
-    text-align: right;
+  text-align: right;
 }
 
 .loginlabel {
@@ -174,56 +181,56 @@ p {
 }
 
 .submit {
-    padding-top: 150px;
-    width: 30%;
+  padding-top: 150px;
+  width: 30%;
 }
 
 .button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: rgba(128,193,85,1);
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgba(128, 193, 85, 1);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
 .button:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .button:disabled {
-    background-color: #3e8e41;
+  background-color: #3e8e41;
 }
 
 .loginbutton {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: rgba(128,193,85,1);
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgba(128, 193, 85, 1);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
 .loginbutton:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
-input[type='radio'] {
-    transform: scale(1.4);
+input[type="radio"] {
+  transform: scale(1.4);
 }
