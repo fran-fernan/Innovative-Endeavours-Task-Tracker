@@ -70,12 +70,18 @@
                         </label></p>
                 </div>
                 <div class="input-field col s5">
-                    <div class="input-field col s6 valign-wrapper">
+                    <div style="line-height:50%;">
+                        <br>
+                    </div>
+                    <div class="input-field col s6">
                         <input name="jobbox" id="last_name" type="text" class="validate">
                         <label for="last_name">Task Number</label>
                     </div>
                 </div>
                 <div class="input-field col s5">
+                    <div style="line-height:50%;">
+                        <br>
+                    </div>
                     <center><input type="submit" class="button" id="button" value="Start Timer" disabled></center>
 
                 </div>
