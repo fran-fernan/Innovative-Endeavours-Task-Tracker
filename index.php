@@ -26,17 +26,6 @@
             
         }
         ?>
-
-    <!--
-    <div id="wrapper">
-
-        <?php
-            require_once 'header.php';
-            ?>
-
-    </div>
-    -->
-
     <nav>
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">&nbsp;&nbsp;&nbsp;Innovative Endeavors Task Tracker</a>
