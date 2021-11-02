@@ -50,10 +50,9 @@ h5 {
 }
 
 h1 {
+  font-size: 62px;
   text-align: center;
   color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 62px;
 }
 
 h2 {
