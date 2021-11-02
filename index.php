@@ -70,7 +70,7 @@
                         </label></p>
                 </div>
                 <div class="input-field col s5">
-                    <div style="line-height:100%;">
+                    <div style="line-height:150%;">
                         <br>
                     </div>
                     <div class="input-field col s6">
@@ -79,13 +79,16 @@
                     </div>
                 </div>
                 <div class="input-field col s5">
-                    <div style="line-height:100%;">
+                    <div style="line-height:150%;">
                         <br>
                     </div>
                     <center><input type="submit" class="button" id="button" value="Start Timer" disabled></center>
 
                 </div>
                 <div class="col s12">
+                    <div style="line-height:200%;">
+                        <br>
+                    </div>
                     <center>
                         <h6 style="font-size: 120px;">00:00:00</h6>
                     </center>
