@@ -71,8 +71,10 @@
                 </div>
                 <div class="input-field col s5">
                     <div class="input-field col s6">
+                        <center>
                         <input name="jobbox" id="last_name" type="text" class="validate">
                         <label for="last_name">Task Number</label>
+                        </center>
                     </div>
                 </div>
                 <div class="input-field col s5">
