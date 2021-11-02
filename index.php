@@ -81,7 +81,7 @@
                 </div>
                 <div class="col s12">
                     <center>
-                        <h6 style="font-size: 100px;">00:00:00</h6>
+                        <h6 style="font-size: 120px;">00:00:00</h6>
                     </center>
                 </div>
 
