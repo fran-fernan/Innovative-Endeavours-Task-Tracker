@@ -81,8 +81,8 @@
                     <div style="line-height:150%;">
                         <br>
                     </div>
-                    <center><input type="submit" onclick="startTimer();" class="button" id="button" value="Start Timer" disabled></center>
-                    <center><input type="submit" class="EndButton" id="endButton" value="End Timer"></center>
+                    <center><input type="submit" class="button" id="button" value="Start Timer" onclick="startTimer()"></center>
+                    <center><input type="submit" class="endButton" id="endButton" value="End Timer"></center>
 
                 </div>
                 <div class="col s12">
