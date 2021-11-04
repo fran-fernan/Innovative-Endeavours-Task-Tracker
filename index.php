@@ -647,6 +647,7 @@
     <script>
     $(document).ready(function() {
         $('select').formSelect();
+        document.getElementById("endButton").style.display="none";
     });
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('select');
