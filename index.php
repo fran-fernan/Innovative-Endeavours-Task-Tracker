@@ -660,8 +660,14 @@
         document.getElementById("endButton").style.display="inline-block";
         document.getElementById("endButton").style.padding="15px 25px";
         document.getElementById("endButton").style.cursor="pointer";
-        
-
+        document.getElementById("endButton").style.textAlign="center";
+        document.getElementById("endButton").style.textDecoration="none";
+        document.getElementById("endButton").style.outline="none";
+        document.getElementById("endButton").style.color="#fff";
+        document.getElementById("endButton").style.backgroundColor="rgba(128, 193, 85, 1)";
+        document.getElementById("endButton").style.border="none";
+        document.getElementById("endButton").style.borderRadius="15px";
+        document.getElementById("endButton").style.boxShadow="0 9px #999";
     }
     </script>
 
