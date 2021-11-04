@@ -656,7 +656,7 @@
     function startTimer() {
         alert("funct works");
         document.getElementById("button").style.display="none";
-        document.getElementById("endButton").style.display="none";
+        document.getElementById("endButton").style.display="inline-block";
     }
     </script>
 
