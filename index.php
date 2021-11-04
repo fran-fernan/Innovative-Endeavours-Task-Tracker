@@ -82,7 +82,7 @@
                         <br>
                     </div>
                     <center><a class="button" id="button" onclick="startTimer()">Start Timer</a></center>
-                    <center><input type="submit" id="endButton" value="End Timer" style="font: size 24px;"></center>
+                    <center><input type="submit" id="endButton" value="End Timer" style="display: none;"></center>
 
                 </div>
                 <div class="col s12">
@@ -656,6 +656,7 @@
 
     function startTimer() {
         document.getElementById("button").style.display="none";
+        document.getElementById("demo").style.fontSize = "24px"; 
         document.getElementById("endButton").style.display="inline-block";
         document.getElementById("endButton").style.padding="15px 25px";
         document.getElementById("endButton").style.cursor="pointer";
