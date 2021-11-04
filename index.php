@@ -25,7 +25,7 @@
         } else {
             
         }
-        ?>
+    ?>
     <nav>
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">&nbsp;&nbsp;&nbsp;Innovative Endeavors Task Tracker</a>
@@ -81,7 +81,8 @@
                     <div style="line-height:150%;">
                         <br>
                     </div>
-                    <center><input type="submit" class="button" id="button" value="Start Timer" disabled></center>
+                    <center><input type="submit" onclick="startTimer();" class="button" id="button" value="Start Timer" disabled></center>
+                    <center><input type="submit" class="button" id="endButton" value="End Timer"></center>
 
                 </div>
                 <div class="col s12">
@@ -605,7 +606,6 @@
     </div>
 
     <script>
-    //alert("System upgrade in progress");
     function NameRequired() {
         document.getElementById('button').disabled = false;
     }
@@ -652,6 +652,11 @@
         var elems = document.querySelectorAll('select');
         var instances = M.FormSelect.init(elems, options);
     });
+
+    function startTimer() {
+        document.getElementsByClassName(button).style.display = 'none';
+        document.getElementsByClassName(endButton).style.display = 'inline-block';
+    }
     </script>
 
 </body>
