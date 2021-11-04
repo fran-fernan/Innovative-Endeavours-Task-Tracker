@@ -82,7 +82,7 @@
                         <br>
                     </div>
                     <center><a class="button" id="button" onclick="startTimer()">Start Timer</a></center>
-                    <center><input type="submit" class="button" id="endButton" value="End Timer"></center>
+                    <center><input type="submit" id="endButton" value="End Timer" style="display: none;"></center>
 
                 </div>
                 <div class="col s12">
