@@ -658,6 +658,7 @@
         alert("funct works");
         document.getElementById("button").style.display="none";
         document.getElementById("endButton").style.display="inline-block";
+        document.getElementById("endButton").style.background-color = "(248, rgb50, 50)";
     }
     </script>
 
