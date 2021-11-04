@@ -38,35 +38,34 @@
             </ul>
         </div>
     </nav>
+    <div style="line-height:100%;">
+        <br>
+    </div>
 
     <div id="tasks" class="tabcontent">
         <div class="container jobs row">
             <form action="submit-job.php" method="post">
                 <div class="input-field col s2">
                     <p><label>
-                            <input class="with-gap" name="name" type="radio" value="Zayanna" onclick="NameRequired()"
+                            <input class="with-gap" name="name" type="radio" value="Christian" onclick="NameRequired()"
                                 required />
+                            <span class="black-text" style="font-size:16px;">Christian</span>
+                        </label></p>
+                    <p><label>
+                            <input class="with-gap" name="name" type="radio" value="Ghazi" onclick="NameRequired()" />
+                            <span class="black-text" style="font-size:16px;">Ghazi</span>
+                        </label></p>
+                    <p><label>
+                            <input class="with-gap" name="name" type="radio" value="Jessie" onclick="NameRequired()" />
+                            <span class="black-text" style="font-size:16px;">Jessie</span>
+                        </label></p>
+                    <p><label>
+                            <input class="with-gap" name="name" type="radio" value="Violeta" onclick="NameRequired()" />
+                            <span class="black-text" style="font-size:16px;">Violeta</span>
+                        </label></p>
+                    <p><label>
+                            <input class="with-gap" name="name" type="radio" value="Zayanna" onclick="NameRequired()" />
                             <span class="black-text" style="font-size:16px;">Zayanna</span>
-                        </label></p>
-                    <p><label>
-                            <input class="with-gap" name="name" type="radio" value="Ackum" onclick="NameRequired()" />
-                            <span class="black-text" style="font-size:16px;">Ackum</span>
-                        </label></p>
-                    <p><label>
-                            <input class="with-gap" name="name" type="radio" value="Mahnoor" onclick="NameRequired()" />
-                            <span class="black-text" style="font-size:16px;">Mahnoor</span>
-                        </label></p>
-                    <p><label>
-                            <input class="with-gap" name="name" type="radio" value="Christa" onclick="NameRequired()" />
-                            <span class="black-text" style="font-size:16px;">Christa</span>
-                        </label></p>
-                    <p><label>
-                            <input class="with-gap" name="name" type="radio" value="Tarik" onclick="NameRequired()" />
-                            <span class="black-text" style="font-size:16px;">Tarik</span>
-                        </label></p>
-                    <p><label>
-                            <input class="with-gap" name="name" type="radio" value="Aisha" onclick="NameRequired()" />
-                            <span class="black-text" style="font-size:16px;">Aisha</span>
                         </label></p>
                 </div>
                 <div class="input-field col s5">
@@ -86,7 +85,7 @@
 
                 </div>
                 <div class="col s12">
-                    <div style="line-height:200%;">
+                    <div style="line-height:250%;">
                         <br>
                     </div>
                     <center>
@@ -654,8 +653,6 @@
         var instances = M.FormSelect.init(elems, options);
     });
     </script>
-
-
 
 </body>
 
