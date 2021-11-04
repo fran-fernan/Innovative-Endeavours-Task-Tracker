@@ -648,7 +648,7 @@
     $(document).ready(function() {
         $('select').formSelect();
         document.getElementById("endButton").style.display="none";
-        //document.getElementById("endButton").style.background-color = "(248, rgb50, 50)";
+        document.getElementById("myDIV").className = "endButton"; 
     });
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('select');
