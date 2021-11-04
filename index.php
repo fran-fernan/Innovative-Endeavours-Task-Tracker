@@ -648,7 +648,6 @@
     $(document).ready(function() {
         $('select').formSelect();
         document.getElementById("endButton").style.display="none";
-        document.getElementById("myDIV").className = "endButton"; 
     });
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('select');
@@ -658,7 +657,7 @@
     function startTimer() {
         alert("funct works");
         document.getElementById("button").style.display="none";
-        document.getElementById("endButton").style.display="inline-block";
+        document.getElementById("endButton").className = "endButton"; 
     }
     </script>
 
