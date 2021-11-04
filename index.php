@@ -82,7 +82,7 @@
                         <br>
                     </div>
                     <center><a class="button" id="button" onclick="startTimer()">Start Timer</a></center>
-                    <center><input type="submit" class="button" id="button" value="End Timer"></center>
+                    <center><input type="submit" class="endButton" id="endButton" value="End Timer"></center>
 
                 </div>
                 <div class="col s12">
@@ -655,8 +655,8 @@
 
     function startTimer() {
         alert("funct works");
-        document.getElementsById(button).style.display = 'none';
-        document.getElementsById(endButton).style.display = 'inline-block';
+        document.getElementById(button).style.display = 'none';
+        document.getElementById(endButton).style.display = 'inline-block';
     }
     </script>
 
