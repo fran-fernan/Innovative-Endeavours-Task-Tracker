@@ -648,6 +648,7 @@
     $(document).ready(function() {
         $('select').formSelect();
         document.getElementById("endButton").style.display="none";
+        document.getElementById("endButton").style.background-color = "(248, rgb50, 50)";
     });
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('select');
@@ -658,7 +659,6 @@
         alert("funct works");
         document.getElementById("button").style.display="none";
         document.getElementById("endButton").style.display="inline-block";
-        document.getElementById("endButton").style.background-color = "(248, rgb50, 50)";
     }
     </script>
 
