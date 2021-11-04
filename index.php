@@ -657,7 +657,9 @@
     function startTimer() {
         document.getElementById("button").style.display="none";
         document.getElementById("endButton").style.display="inline-block";
-        document.getElementById("endButton").className = "endButton";
+        document.getElementById("endButton").style.padding="15px 25px";
+        document.getElementById("endButton").style.font-size="24px";
+
     }
     </script>
 
