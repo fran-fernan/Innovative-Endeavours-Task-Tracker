@@ -697,7 +697,7 @@
         var convertedTime = new Date(totalTime);
         console.log(totalTime);
         console.log(convertedTime);
-        console.log(totalTime/60);
+        console.log(convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
     }
     </script>
 
