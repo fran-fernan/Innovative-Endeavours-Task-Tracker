@@ -693,8 +693,11 @@
         document.getElementById("endTime").setAttribute("value", d.getMinutes() + ":" + d.getSeconds());
 
         //save total time to variable
-        var totalTime = d - Date.parse(document.getElementById("startTime").value);
+        var startTime = Date.parse(document.getElementById("startTime").value)
+        var totalTime = d - startTime;
         var convertedTime = new Date(totalTime);
+        document.getElementById("totalTime").setAttribute("value", convertedTime);
+        document.getElementById("startTime").setAttribute("value", startTime.getMinutes() + ":" + startTime.getSeconds());
         console.log(totalTime);
         console.log(convertedTime);
         console.log(convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
