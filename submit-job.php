@@ -48,7 +48,7 @@ if ($jobs == "" && $other != "") {
     }
 }
 */
-$query = "insert into tasks (name, task, date, time_start, time_end) values ('Hi', '1', '003', '34', '31')";
+$query = "insert into tasks (name, task, date, time_start, time_end) values ($name, $task, $date, $startTime, $endTime)";
 $result = mysqli_query($conn, $query);
 
 if ($result > 0)
