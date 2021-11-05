@@ -7,13 +7,11 @@ date_default_timezone_set(America / Toronto);
 
 // read values from the form
 $name = $_REQUEST['name'];
-$jobs = $_REQUEST['jobs'];
+$task = $_REQUEST['jobs'];
 date_default_timezone_set("America/Toronto");
-$day = date("D");
-$week = date("W");
-$other = $_REQUEST['jobbox'];
-$space = "";
-$flag = 0;
+$date = date("m-d-Y");
+$startTime = $_REQUEST['startTime'];
+$endTime = date("i:s");
 /*
   $index = array_search("other", $jobs);
 
@@ -36,11 +34,7 @@ $flag = 0;
   $jobs[$index] = $other;
   }
  */
-
-if ($other != "") {
-    array_push($jobs, $other);
-}
-
+/*
 if ($jobs == "" && $other != "") {
     $query = "insert into tblEFSE (name, job, day, week) values ('$name', '$other', '$day', '$week')";
     $result = mysqli_query($conn, $query);
@@ -53,6 +47,9 @@ if ($jobs == "" && $other != "") {
         //}
     }
 }
+*/
+$query = "insert into tasks (name, task, date, time start, time end) values ('$name', '$task', '$date', '$startTime', '$endTime')";
+$result = mysqli_query($conn, $query);
 
 if ($result > 0)
     header("Location:index.php?result=success");
