@@ -57,7 +57,7 @@ if ($jobs == "" && $other != "") {
 
 
 //$query = "insert into tasks (name, task, date, time_start, time_end) values ($name, $task, $date, $startTime, $endTime)";
-$query = "insert into tasks (name, task, date, time_start, time_end) values ('Test', $task, $date, '34:45', $endTime)";
+$query = "insert into tasks (name, task, date, time_start, time_end) values ('Test', $task, $date, $startTime, $endTime)";
 $result = mysqli_query($conn, $query);
 
 if ($result > 0)
