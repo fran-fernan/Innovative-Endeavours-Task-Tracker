@@ -97,8 +97,12 @@ header("Location:index.php?result=fail");
     </div>
     <div id="results" style="text-align:center;font-size:24px;">
     </div>
+    <div style="line-height:200%;">
+        <br>
+    </div>
+    <center><a class="button" id="button" onclick="location.href='index.php'">Go Back</a></center>
 </body>
 <script>
-    document.getElementById("results").innerHTML="Thanks " + localStorage.getItem("name") + ",task " + localStorage.getItem("task") + " was completed in " + localStorage.getItem("totalTime");
+    document.getElementById("results").innerHTML="Task " + localStorage.getItem("task") + " was completed in " + localStorage.getItem("totalTime");
 </script>
 </html>
