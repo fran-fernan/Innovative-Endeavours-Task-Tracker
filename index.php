@@ -94,7 +94,7 @@
                         <br>
                     </div>
                     <center>
-                        <h6 style="font-size: 120px;">00:00:00</h6>
+                        <h6 style="font-size: 120px;"><span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span></h6>
                     </center>
                 </div>
 
@@ -686,6 +686,14 @@
         document.getElementById("startTime").setAttribute("value", d.getMinutes() + ":" + d.getSeconds());
         localStorage.setItem("startTime", d.getMinutes() + ":" + d.getSeconds());
         localStorage.setItem("task", document.getElementById("task_box").value);
+
+        //stopwatch
+        var min = 0, sec = 0, milli = 0;
+
+        setInterval(function(){
+            document.getElementById("milliseconds").innerHTML = milli;
+            milli++;
+        }, 10)
     }
 
     function endTimer() {
@@ -707,6 +715,7 @@
         console.log("end time: " + document.getElementById("endTime").value);
         console.log("total time: " + convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
     }
+    
     </script>
 
 </body>
