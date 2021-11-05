@@ -105,6 +105,7 @@
             <center>What skill did you do today?</center>
         </h5>
         <?php
+        /*
         require_once 'config.php';
 
         $week = date("W");
@@ -583,6 +584,7 @@
         echo "</td></tr>";
 
         echo "</table></h6>";
+        */
         ?>
     </div>
 
