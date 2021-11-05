@@ -95,6 +95,10 @@ header("Location:index.php?result=fail");
     <div style="line-height:100%;">
         <br>
     </div>
-    <h1><?phpecho $name;?></h1>
+    <div id="results">
+    </div>
 </body>
+<script>
+     document.getElementById("results").innerHTML="hi";
+</script>
 </html>
