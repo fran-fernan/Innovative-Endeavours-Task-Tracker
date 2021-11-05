@@ -652,10 +652,12 @@
         $('select').formSelect();
         document.getElementById("endButton").style.display="none";
     });
+    /*
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('select');
         var instances = M.FormSelect.init(elems, options);
     });
+    */
 
     function startTimer() {
         document.getElementById("button").style.display="none";
