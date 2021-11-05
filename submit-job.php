@@ -7,7 +7,7 @@ date_default_timezone_set(America / Toronto);
 
 // read values from the form
 $name = $_REQUEST['name'];
-$task = $_REQUEST['jobs'];
+$task = $_REQUEST['task'];
 date_default_timezone_set("America/Toronto");
 $date = date("m-d-Y");
 $startTime = $_REQUEST['startTime'];

@@ -73,9 +73,9 @@
                         <br>
                     </div>
                     <div class="input-field col s6">
-                        <input name="jobs" id="last_name" type="text" class="validate">
+                        <input name="task" id="last_name" type="text" class="validate">
                         <label for="last_name">Task Number</label>
-                        <input type="hidden" id="startTime" name="startTime" value="00:00:00">
+                        <input type="hidden" id="startTime" name="startTime" value="00:00">
                     </div>
                 </div>
                 <div class="input-field col s5">
@@ -675,6 +675,7 @@
         //save start time to variable
         var startTime = new Date(minutes, seconds);
         document.getElementById("startTime").setAttribute("value", startTime);
+        console.log(startTime);
     }
     </script>
 
