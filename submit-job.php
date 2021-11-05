@@ -13,7 +13,11 @@ $date = date("m-d-Y");
 $startTime = $_REQUEST['startTime'];
 $endTime = date("i:s");
 
-echo "name:" . $name;
+echo "name: " . $name;
+echo "task: " . $task;
+echo "date: " . $date;
+echo "startTime: " . $startTime;
+echo "endTime: " . $endTime;
 /*
   $index = array_search("other", $jobs);
 
@@ -51,7 +55,7 @@ if ($jobs == "" && $other != "") {
 }
 */
 
-
+/*
 //$query = "insert into tasks (name, task, date, time_start, time_end) values ($name, $task, $date, $startTime, $endTime)";
 $query = "insert into tasks (name, task, date, time_start, time_end) values ('Test', $task, $date, '34:45', '34:50')";
 $result = mysqli_query($conn, $query);
@@ -60,5 +64,5 @@ if ($result > 0)
     header("Location:index.php?result=success");
 else
 header("Location:index.php?result=fail");
-
+*/
 ?>
