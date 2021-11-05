@@ -11,7 +11,7 @@ $task = $_REQUEST['task'];
 date_default_timezone_set("America/Toronto");
 $date = date("mdY");
 $startTime = $_REQUEST['startTime'];
-$endTime = date("i:s");
+$endTime = date("is");
 
 echo "name: " . $name;
 echo "\ntask: " . $task;
