@@ -13,11 +13,13 @@ $date = date("m-d-Y");
 $startTime = $_REQUEST['startTime'];
 $endTime = $_REQUEST['endTime'];
 
+/*
 echo "name: " . $name;
 echo "\ntask: " . $task;
 echo "\ndate: " . $date;
 echo "\nstartTime: " . $startTime;
 echo "\nendTime: " . $endTime;
+*/
 /*
   $index = array_search("other", $jobs);
 
@@ -93,5 +95,6 @@ header("Location:index.php?result=fail");
     <div style="line-height:100%;">
         <br>
     </div>
+    <h6><?php $name ?></h6>
 </body>
 </html>
