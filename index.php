@@ -19,7 +19,7 @@
             if ($_REQUEST['result'] == "success") {
                 $defaultOpen = "";
                 echo "
-                    <h6>$name</h6>
+                    <h6>hello</h6>
                 ";
             } else if ($_REQUEST['result'] == "fail") {
                 echo "Soemthing went wrong.";
@@ -686,6 +686,7 @@
 
         document.getElementById("startTimeRaw").setAttribute("value", d);
         document.getElementById("startTime").setAttribute("value", d.getMinutes() + ":" + d.getSeconds());
+        localStorage.setItem("startTime", d.getMinutes() + ":" + d.getSeconds());
     }
 
     function endTimer() {
@@ -695,12 +696,14 @@
         d.getSeconds(); // => 51
 
         document.getElementById("endTime").setAttribute("value", d.getMinutes() + ":" + d.getSeconds());
+        localStorage.setItem("endTime", d.getMinutes() + ":" + d.getSeconds());
 
         //save total time to variable
         var startTime = Date.parse(document.getElementById("startTimeRaw").value)
         var totalTime = d - startTime;
         var convertedTime = new Date(totalTime);
         document.getElementById("totalTime").setAttribute("value", convertedTime);
+        localStorage.setItem("totalTime", convertedTime);
         console.log("start time: " + document.getElementById("startTime").value);
         console.log("end time: " + document.getElementById("endTime").value);
         console.log("total time: " + convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
