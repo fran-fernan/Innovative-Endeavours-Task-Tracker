@@ -692,7 +692,12 @@
 
         setInterval(function(){
             document.getElementById("milliseconds").innerHTML = milli;
-            milli++;
+            if (milli > "99"){
+                milli = 0;
+            }
+            else{
+                milli++;
+            }
         }, 10)
     }
 
