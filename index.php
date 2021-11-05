@@ -18,9 +18,7 @@
         if (isset($_REQUEST['result'])) {
             if ($_REQUEST['result'] == "success") {
                 $defaultOpen = "";
-                echo "
-                    <h6></h6>
-                ";
+                document.getElementById("tasks").innerHTML = "hi";
             } else if ($_REQUEST['result'] == "fail") {
                 echo "Soemthing went wrong.";
             }
