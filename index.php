@@ -694,7 +694,7 @@
 
         //save total time to variable
         var totalTime = d - document.getElementById("startTime").value;
-        consolelog(totalTime);
+        console.log(totalTime);
     }
     </script>
 
