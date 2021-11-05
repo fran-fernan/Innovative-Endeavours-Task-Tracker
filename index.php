@@ -17,8 +17,7 @@
         $defaultOpen = "defaultOpen";
         if (isset($_REQUEST['result'])) {
             if ($_REQUEST['result'] == "success") {
-                $defaultOpen = "";
-                $defaultOpenSuccess = "defaultOpen";
+                
             } else if ($_REQUEST['result'] == "fail") {
                 echo "Soemthing went wrong.";
             }
