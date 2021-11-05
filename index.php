@@ -44,7 +44,7 @@
 
     <div id="tasks" class="tabcontent">
         <div class="container jobs row">
-            <form action="submit-job.php" method="post">
+            <form action="" method="post">
                 <div class="input-field col s2">
                     <p><label>
                             <input class="with-gap" name="name" type="radio" value="Christian" onclick="NameRequired()"
@@ -76,6 +76,8 @@
                         <input name="task" id="last_name" type="text" class="validate">
                         <label for="last_name">Task Number</label>
                         <input type="hidden" id="startTime" name="startTime" value="00:00">
+                        <input type="hidden" id="endTime" name="endTime" value="00:00">
+                        <input type="hidden" id="totalTime" name="totalTime" value="00:00">
                     </div>
                 </div>
                 <div class="input-field col s5">
@@ -83,7 +85,7 @@
                         <br>
                     </div>
                     <center><a class="button" id="button" onclick="startTimer()">Start Timer</a></center>
-                    <center><input type="submit" id="endButton" value="End Timer" style="display: none;"></center>
+                    <center><input type="submit" id="endButton" onclick="endTimer()" value="End Timer" style="display: none;"></center>
 
                 </div>
                 <div class="col s12">
@@ -679,7 +681,20 @@
         d.getMinutes(); // =>  30
         d.getSeconds(); // => 51
 
-        document.getElementById("startTime").setAttribute("value", d.getMinutes() + ":" + d.getSeconds());
+        document.getElementById("startTime").setAttribute("value", d);
+    }
+
+    function endTimer() {
+        //save end time to variable
+        var d = new Date(); // for now
+        d.getMinutes(); // =>  30
+        d.getSeconds(); // => 51
+
+        document.getElementById("endTime").setAttribute("value", d.getMinutes() + ":" + d.getSeconds());
+
+        //save total time to variable
+        var totalTime = d - document.getElementById("startTime").value;
+        consolelog(totalTime);
     }
     </script>
 
