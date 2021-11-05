@@ -15,16 +15,7 @@
 
     <?php
         $defaultOpen = "defaultOpen";
-        if (isset($_REQUEST['result'])) {
-            if ($_REQUEST['result'] == "success") {
-                $defaultOpen = "";
-                document.getElementById("tasks").innerHTML = "hi";
-            } else if ($_REQUEST['result'] == "fail") {
-                echo "Soemthing went wrong.";
-            }
-        } else {
-            
-        }
+        
     ?>
     <nav>
         <div class="nav-wrapper">
@@ -708,6 +699,18 @@
         console.log("total time: " + convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
     }
     </script>
+    <?php
+    if (isset($_REQUEST['result'])) {
+        if ($_REQUEST['result'] == "success") {
+            $defaultOpen = "";
+            document.getElementById("tasks").innerHTML = "hi";
+        } else if ($_REQUEST['result'] == "fail") {
+            echo "Soemthing went wrong.";
+        }
+    } else {
+        
+    }
+    ?>
 
 </body>
 
