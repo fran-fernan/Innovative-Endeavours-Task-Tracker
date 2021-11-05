@@ -48,7 +48,7 @@ if ($jobs == "" && $other != "") {
     }
 }
 */
-$query = "insert into tblEFSE (name, job) values ('Hi', '2')";
+$query = "insert into tblEFSE (name, job, day, week) values ('Hi', 'thing', 'Fri', '34')";
 $result = mysqli_query($conn, $query);
 
 if ($result > 0)
