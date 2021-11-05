@@ -694,9 +694,10 @@
 
         //save total time to variable
         var totalTime = d - Date.parse(document.getElementById("startTime").value);
-        console.log(d);
-        console.log(Date.parse(document.getElementById("startTime").value));
-        console.log(totalTime.getMinutes + totalTime.getSeconds);
+        var convertedTime = new Date(totalTime);
+        console.log(totalTime);
+        console.log(convertedTime);
+        console.log(totalTime/60);
     }
     </script>
 
