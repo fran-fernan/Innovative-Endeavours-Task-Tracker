@@ -55,7 +55,7 @@ if ($jobs == "" && $other != "") {
 }
 */
 
-$random = date("mdY");
+$random = 543;
 //$query = "insert into tasks (name, task, date, time_start, time_end) values ($name, $task, $date, $startTime, $endTime)";
 $query = "insert into tasks (name, task, date, time_start, time_end) values ($random, $task, $date, $startTime, $endTime)";
 $result = mysqli_query($conn, $query);
