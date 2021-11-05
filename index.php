@@ -696,7 +696,7 @@
         var totalTime = d - Date.parse(document.getElementById("startTime").value);
         console.log(d);
         console.log(Date.parse(document.getElementById("startTime").value));
-        console.log(totalTime);
+        console.log(totalTime.getMinutes + totalTime.getSeconds);
     }
     </script>
 
