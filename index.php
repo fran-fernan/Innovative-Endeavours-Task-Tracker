@@ -73,8 +73,8 @@
                         <br>
                     </div>
                     <div class="input-field col s6">
-                        <input name="task" id="last_name" type="text" class="validate">
-                        <label for="last_name">Task Number</label>
+                        <input name="task" id="task_box" type="text">
+                        <label for="task_box">Task Number</label>
                         <input type="hidden" id="startTime" name="startTime" value="00:00">
                         <input type="hidden" id="startTimeRaw" name="startTimeRaw" value="00:00">
                         <input type="hidden" id="endTime" name="endTime" value="00:00">
@@ -686,7 +686,7 @@
         document.getElementById("startTime").setAttribute("value", d.getMinutes() + ":" + d.getSeconds());
         localStorage.setItem("startTime", d.getMinutes() + ":" + d.getSeconds());
         localStorage.setItem("name", document.getElementById("name"));
-        localStorage.setItem("task", document.getElementById("last_name"));
+        localStorage.setItem("task", document.getElementById("task_box"));
     }
 
     function endTimer() {
