@@ -685,7 +685,7 @@
         document.getElementById("startTimeRaw").setAttribute("value", d);
         document.getElementById("startTime").setAttribute("value", d.getMinutes() + ":" + d.getSeconds());
         localStorage.setItem("startTime", d.getMinutes() + ":" + d.getSeconds());
-        localStorage.setItem("name", document.getElementById("name"));
+        localStorage.setItem("name", document.getElementById("name").value);
         localStorage.setItem("task", document.getElementById("task_box").value);
     }
 
