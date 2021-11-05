@@ -58,10 +58,40 @@ if ($jobs == "" && $other != "") {
 //$query = "insert into tasks (name, task, date, time_start, time_end) values ($name, $task, $date, $startTime, $endTime)";
 $query = "insert into tasks (name, task, date, time_start, time_end) values ('$name', $task, '$date', '$startTime', '$endTime')";
 $result = mysqli_query($conn, $query);
-
+/*
 if ($result > 0)
     header("Location:index.php?result=success");
 else
 header("Location:index.php?result=fail");
-
+*/
 ?>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Erindale Transition Skills app</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">&nbsp;&nbsp;&nbsp;Innovative Endeavors Task Tracker</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a class="tablinks" onclick="openTab(event, 'tasks')" id="<?php echo $defaultOpen; ?>">tasks</a>
+                </li>
+                <li><a class="tablinks" onclick="openTab(event, 'history')"
+                        id="<?php echo $defaultOpenSuccess; ?>">history</a></li>
+                <li><a class="tablinks" onclick="openTab(event, 'admin')">admin</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div style="line-height:100%;">
+        <br>
+    </div>
+</body>
+</html>
