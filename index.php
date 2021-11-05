@@ -44,7 +44,7 @@
 
     <div id="tasks" class="tabcontent">
         <div class="container jobs row">
-            <form action="" method="post">
+            <form action="submit-job.php" method="post">
                 <div class="input-field col s2">
                     <p><label>
                             <input class="with-gap" name="name" type="radio" value="Christian" onclick="NameRequired()"
