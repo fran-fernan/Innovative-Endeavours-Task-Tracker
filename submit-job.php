@@ -95,6 +95,8 @@ header("Location:index.php?result=fail");
     <div style="line-height:100%;">
         <br>
     </div>
-    <h6><?php echo $name ?></h6>
+    <h1><?php
+        echo "Hello World!";
+    ?></h1>
 </body>
 </html>
