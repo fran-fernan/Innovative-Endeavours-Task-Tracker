@@ -3,7 +3,7 @@
 $host = 'localhost';
 $username = 'fefranci_admin';
 $password = 'cplena!L0ve';
-$db_name = 'fefranci_mydb';
+$db_name = 'fefranci_IETT';
 
 $conn = mysqli_connect($host,$username,$password,$db_name);
 
