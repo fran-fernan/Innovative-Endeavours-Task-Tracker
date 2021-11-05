@@ -18,6 +18,9 @@
         if (isset($_REQUEST['result'])) {
             if ($_REQUEST['result'] == "success") {
                 $defaultOpen = "";
+                echo "
+                    <h6>$name</h6>
+                ";
             } else if ($_REQUEST['result'] == "fail") {
                 echo "Soemthing went wrong.";
             }
