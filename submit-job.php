@@ -12,6 +12,8 @@ date_default_timezone_set("America/Toronto");
 $date = date("m-d-Y");
 $startTime = $_REQUEST['startTime'];
 $endTime = date("i:s");
+
+echo $name . $task . $date . $startTime . $endTime
 /*
   $index = array_search("other", $jobs);
 
@@ -48,8 +50,8 @@ if ($jobs == "" && $other != "") {
     }
 }
 */
-$query = "insert into tasks (name, task, date, time_start, time_end) values ($name, $task, $date, $startTime, $endTime)";
-$result = mysqli_query($conn, $query);
+//$query = "insert into tasks (name, task, date, time_start, time_end) values ($name, $task, $date, $startTime, $endTime)";
+//$result = mysqli_query($conn, $query);
 
 if ($result > 0)
     header("Location:index.php?result=success");

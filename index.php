@@ -678,7 +678,6 @@
         d.getSeconds(); // => 51
 
         document.getElementById("startTime").setAttribute("value", d.getMinutes() + ":" + d.getSeconds());
-        console.log(startTime);
     }
     </script>
 
