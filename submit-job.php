@@ -9,7 +9,7 @@ date_default_timezone_set(America / Toronto);
 $name = $_REQUEST['name'];
 $task = $_REQUEST['task'];
 date_default_timezone_set("America/Toronto");
-$date = date("mdY");
+$date = date("m-d-Y");
 $startTime = $_REQUEST['startTime'];
 $endTime = date("i:s");
 
