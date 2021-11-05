@@ -9,9 +9,9 @@ date_default_timezone_set(America / Toronto);
 $name = $_REQUEST['name'];
 $task = $_REQUEST['task'];
 date_default_timezone_set("America/Toronto");
-$date = date("mdY");
+$date = date("m-d-Y");
 $startTime = $_REQUEST['startTime'];
-$endTime = date("is");
+$endTime = date("i:s");
 
 echo "name: " . $name;
 echo "\ntask: " . $task;
@@ -56,7 +56,7 @@ if ($jobs == "" && $other != "") {
 */
 
 //$query = "insert into tasks (name, task, date, time_start, time_end) values ($name, $task, $date, $startTime, $endTime)";
-$query = "insert into tasks (name, task, date, time_start, time_end) values ('$name', $task, $date, $startTime, $endTime)";
+$query = "insert into tasks (name, task, date, time_start, time_end) values ('$name', $task, '$date', '$startTime', '$endTime')";
 $result = mysqli_query($conn, $query);
 
 if ($result > 0)
