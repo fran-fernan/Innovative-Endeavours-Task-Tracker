@@ -14,10 +14,10 @@ $startTime = $_REQUEST['startTime'];
 $endTime = date("i:s");
 
 echo "name: " . $name;
-echo "task: " . $task;
-echo "date: " . $date;
-echo "startTime: " . $startTime;
-echo "endTime: " . $endTime;
+echo "\ntask: " . $task;
+echo "\ndate: " . $date;
+echo "\nstartTime: " . $startTime;
+echo "\nendTime: " . $endTime;
 /*
   $index = array_search("other", $jobs);
 
