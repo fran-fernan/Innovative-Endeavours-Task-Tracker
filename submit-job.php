@@ -95,7 +95,7 @@ header("Location:index.php?result=fail");
     <div style="line-height:200%;">
         <br>
     </div>
-    <div id="results" style="text-align:center;">
+    <div id="results" style="text-align:center;font-size:24px;">
     </div>
 </body>
 <script>
