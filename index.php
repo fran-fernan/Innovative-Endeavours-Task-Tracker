@@ -705,7 +705,7 @@
                 sec = 0;
                 min++;
             }
-        }, 10)
+        }, 1000)
     }
 
     function endTimer() {
