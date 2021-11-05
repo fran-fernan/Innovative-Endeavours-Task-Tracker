@@ -691,7 +691,7 @@
         var min = 0, sec = 0, milli = 0;
 
         setInterval(function(){
-            document.getElementById("milliseconds").innerHTML = (milli).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
+            document.getElementById("milliseconds").innerHTML = (milli).toLocaleString('en-US', {minimumIntegerDigits: 2, maximumIntegerDigits: 2, useGrouping:false});
             document.getElementById("seconds").innerHTML = (sec).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
             if (milli > "99"){
                 milli = 0;
