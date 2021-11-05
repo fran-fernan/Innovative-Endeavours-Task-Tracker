@@ -679,7 +679,7 @@
         d.getMinutes(); // =>  30
         d.getSeconds(); // => 51
 
-        document.getElementById("startTime").setAttribute("value", d.getMinutes() + "" + d.getSeconds());
+        document.getElementById("startTime").setAttribute("value", d.getMinutes() + ":" + d.getSeconds());
     }
     </script>
 
