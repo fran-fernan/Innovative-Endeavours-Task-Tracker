@@ -55,7 +55,7 @@ if ($jobs == "" && $other != "") {
 }
 */
 
-
+$name = 'Ghazi';
 //$query = "insert into tasks (name, task, date, time_start, time_end) values ($name, $task, $date, $startTime, $endTime)";
 $query = "insert into tasks (name, task, date, time_start, time_end) values ($name, $task, $date, $startTime, $endTime)";
 $result = mysqli_query($conn, $query);
