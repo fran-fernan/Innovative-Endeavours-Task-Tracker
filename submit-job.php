@@ -99,6 +99,6 @@ header("Location:index.php?result=fail");
     </div>
 </body>
 <script>
-     document.getElementById("results").innerHTML="Task " + localStorage.getItem("task") + " was completed in " + localStorage.getItem("totalTime");
+    document.getElementById("results").innerHTML="Thanks " + localStorage.getItem("name") + ",task " + localStorage.getItem("task") + " was completed in " + localStorage.getItem("totalTime");
 </script>
 </html>
