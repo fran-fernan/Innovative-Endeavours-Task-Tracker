@@ -699,9 +699,9 @@
         var totalTime = d - startTime;
         var convertedTime = new Date(totalTime);
         document.getElementById("totalTime").setAttribute("value", convertedTime);
-        console.log(totalTime);
-        console.log(convertedTime);
-        console.log(convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
+        console.log("start time: " + document.getElementById("startTime").value);
+        console.log("end time: " + document.getElementById("endTime").value);
+        console.log("total time: " + convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
     }
     </script>
 
