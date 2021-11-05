@@ -673,8 +673,11 @@
         document.getElementById("endButton").style.boxShadow="0 9px #999";
 
         //save start time to variable
-        var startTime = new Date(minutes, seconds);
-        document.getElementById("startTime").setAttribute("value", startTime);
+        var d = new Date(); // for now
+        d.getMinutes(); // =>  30
+        d.getSeconds(); // => 51
+
+        document.getElementById("startTime").setAttribute("value", d.getMinutes() + ":" + d.getSeconds());
         console.log(startTime);
     }
     </script>
