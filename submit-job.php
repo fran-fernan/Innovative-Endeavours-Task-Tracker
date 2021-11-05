@@ -96,7 +96,7 @@ header("Location:index.php?result=fail");
         <br>
     </div>
     <h1><?php
-        echo "Hello World!";
+        echo $name;
     ?></h1>
 </body>
 </html>
