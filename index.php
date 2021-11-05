@@ -19,7 +19,7 @@
             if ($_REQUEST['result'] == "success") {
                 $defaultOpen = "";
                 echo "
-                    document.getElementById("tasks").innerHTML = "helllo";
+                    <h6></h6>
                 ";
             } else if ($_REQUEST['result'] == "fail") {
                 echo "Soemthing went wrong.";
