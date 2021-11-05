@@ -92,13 +92,13 @@ header("Location:index.php?result=fail");
             </ul>
         </div>
     </nav>
-    <div style="line-height:100%;">
+    <div style="line-height:200%;">
         <br>
     </div>
-    <div id="results">
+    <div id="results" style="text-align:center;">
     </div>
 </body>
 <script>
-     document.getElementById("results").innerHTML="Task " + localStorage.getItem("task");
+     document.getElementById("results").innerHTML="Task " + localStorage.getItem("task") " was completed in " + localStorage.getItem("totalTime");
 </script>
 </html>
