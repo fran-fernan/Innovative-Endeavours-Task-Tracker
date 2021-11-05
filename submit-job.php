@@ -48,7 +48,7 @@ if ($jobs == "" && $other != "") {
     }
 }
 */
-$query = "insert into tasks (name, task, date, time start, time end) values ('Hi', '2', '0000-00-00', '00:00:00', '00:00:00')";
+$query = "insert into tblEFSE (name, job) values ('Hi', '2')";
 $result = mysqli_query($conn, $query);
 
 if ($result > 0)
