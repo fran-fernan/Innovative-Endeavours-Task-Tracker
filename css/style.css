@@ -171,7 +171,6 @@ p {
   box-shadow: 0 9px #999;
 }
 
-/*
 .button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
@@ -181,7 +180,7 @@ p {
 .button:disabled {
   background-color: #3e8e41;
 }
-*/
+
 .loginbutton {
   display: inline-block;
   padding: 15px 25px;
