@@ -76,6 +76,7 @@
                         <input name="task" id="last_name" type="text" class="validate">
                         <label for="last_name">Task Number</label>
                         <input type="hidden" id="startTime" name="startTime" value="00:00">
+                        <input type="hidden" id="startTimeRaw" name="startTimeRaw" value="00:00">
                         <input type="hidden" id="endTime" name="endTime" value="00:00">
                         <input type="hidden" id="totalTime" name="totalTime" value="00:00">
                     </div>
@@ -681,7 +682,8 @@
         d.getMinutes(); // =>  30
         d.getSeconds(); // => 51
 
-        document.getElementById("startTime").setAttribute("value", d);
+        document.getElementById("startTimeRaw").setAttribute("value", d);
+        document.getElementById("startTime").setAttribute("value", d.getMinutes() + ":" + d.getSeconds());
     }
 
     function endTimer() {
@@ -693,11 +695,10 @@
         document.getElementById("endTime").setAttribute("value", d.getMinutes() + ":" + d.getSeconds());
 
         //save total time to variable
-        var startTime = Date.parse(document.getElementById("startTime").value)
+        var startTime = Date.parse(document.getElementById("startTimeRaw").value)
         var totalTime = d - startTime;
         var convertedTime = new Date(totalTime);
         document.getElementById("totalTime").setAttribute("value", convertedTime);
-        document.getElementById("startTime").setAttribute("value", startTime.getMinutes() + ":" + startTime.getSeconds());
         console.log(totalTime);
         console.log(convertedTime);
         console.log(convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
