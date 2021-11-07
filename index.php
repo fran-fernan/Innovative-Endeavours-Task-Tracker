@@ -73,7 +73,7 @@
                         <br>
                     </div>
                     <div class="input-field col s6">
-                        <input name="task" id="task_box" type="text">
+                        <input name="task" id="task_box" type="text" required>
                         <label for="task_box">Task Number</label>
                         <input type="hidden" id="startTime" name="startTime" value="00:00">
                         <input type="hidden" id="startTimeRaw" name="startTimeRaw" value="00:00">
