@@ -728,7 +728,7 @@
         localStorage.setItem("totalTime", convertedTime.getHours() + ":" + convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
         console.log("start time: " + document.getElementById("startTime").value);
         console.log("end time: " + document.getElementById("endTime").value);
-        console.log("total time: " + convertedTime.getHours() + ":" + convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
+        console.log("total time: " + convertedTime);
         console.log(totalTime);
     }
     
