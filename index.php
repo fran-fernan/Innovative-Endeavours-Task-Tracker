@@ -687,7 +687,7 @@
         document.getElementById("startTime").setAttribute("value", d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
         localStorage.setItem("startTime", d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
         localStorage.setItem("task", document.getElementById("task_box").value);
-        /*
+        
         //stopwatch
         var min = 0, sec = 0, hour = 0;
 
@@ -707,7 +707,7 @@
             document.getElementById("minutes").innerHTML = (min).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
             document.getElementById("hours").innerHTML = (hour).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
         }, 1000)
-        */
+        
     }
 
     function endTimer() {

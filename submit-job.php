@@ -103,6 +103,6 @@ header("Location:index.php?result=fail");
     <center><a class="button" id="button" onclick="location.href='index.php'">Go Back</a></center>
 </body>
 <script>
-    document.getElementById("results").innerHTML="Task " + localStorage.getItem("task") + " was completed in " + localStorage.getItem("totalTime") + " (minutes:seconds)";
+    document.getElementById("results").innerHTML="Task " + localStorage.getItem("task") + " was completed in " + localStorage.getItem("totalTime") + " (hours:minutes:seconds)";
 </script>
 </html>
