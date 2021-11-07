@@ -94,7 +94,7 @@
                         <br>
                     </div>
                     <center>
-                        <h6 style="font-size: 120px;"><span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span></h6>
+                        <h6 style="font-size: 120px;"><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></h6>
                     </center>
                 </div>
 
@@ -679,53 +679,55 @@
 
         //save start time to variable
         var d = new Date(); // for now
+        d.getHours();
         d.getMinutes(); // =>  30
         d.getSeconds(); // => 51
 
         document.getElementById("startTimeRaw").setAttribute("value", d);
-        document.getElementById("startTime").setAttribute("value", d.getMinutes() + ":" + d.getSeconds());
-        localStorage.setItem("startTime", d.getMinutes() + ":" + d.getSeconds());
+        document.getElementById("startTime").setAttribute("value", d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
+        localStorage.setItem("startTime", d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
         localStorage.setItem("task", document.getElementById("task_box").value);
 
         //stopwatch
-        var min = 0, sec = 0, milli = 0;
+        var min = 0, sec = 0, hour = 0;
 
         setInterval(function(){
-            document.getElementById("milliseconds").innerHTML = (milli).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
             document.getElementById("seconds").innerHTML = (sec).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
             document.getElementById("minutes").innerHTML = (min).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
-            if (milli > "98"){
-                milli = 0;
-                sec++;
-            }
-            else{
-                milli++;
-            }
+            document.getElementById("hours").innerHTML = (hour).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
             if (sec > "59"){
                 sec = 0;
                 min++;
             }
-        }, 10)
+            else{
+                sec++;
+            }
+            if (min > "59"){
+                min = 0;
+                hour++;
+            }
+        }, 1000)
     }
 
     function endTimer() {
         //save end time to variable
         var d = new Date(); // for now
+        d.getHours();
         d.getMinutes(); // =>  30
         d.getSeconds(); // => 51
 
-        document.getElementById("endTime").setAttribute("value", d.getMinutes() + ":" + d.getSeconds());
-        localStorage.setItem("endTime", d.getMinutes() + ":" + d.getSeconds());
+        document.getElementById("endTime").setAttribute("value", d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
+        localStorage.setItem("endTime", d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
 
         //save total time to variable
         var startTime = Date.parse(document.getElementById("startTimeRaw").value)
         var totalTime = d - startTime;
         var convertedTime = new Date(totalTime);
         document.getElementById("totalTime").setAttribute("value", convertedTime);
-        localStorage.setItem("totalTime", convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
+        localStorage.setItem("totalTime", convertedTime.getHours() + ":" + convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
         console.log("start time: " + document.getElementById("startTime").value);
         console.log("end time: " + document.getElementById("endTime").value);
-        console.log("total time: " + convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
+        console.log("total time: " + convertedTime.getHours() + ":" + convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
     }
     
     </script>
