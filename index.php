@@ -725,7 +725,7 @@
         var totalTime = d - startTime;
         var convertedTime = new Date(totalTime).toISOString().slice(11,19);
         document.getElementById("totalTime").setAttribute("value", convertedTime);
-        //localStorage.setItem("totalTime", convertedTime.getHours() + ":" + convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
+        localStorage.setItem("totalTime", convertedTime);
         console.log("start time: " + document.getElementById("startTime").value);
         console.log("end time: " + document.getElementById("endTime").value);
         console.log("total time: " + convertedTime);
