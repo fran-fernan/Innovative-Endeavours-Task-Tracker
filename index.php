@@ -729,6 +729,7 @@
         console.log("start time: " + document.getElementById("startTime").value);
         console.log("end time: " + document.getElementById("endTime").value);
         console.log("total time: " + convertedTime.getHours() + ":" + convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
+        console.log(totalTime);
     }
     
     </script>
