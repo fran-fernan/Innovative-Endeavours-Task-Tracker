@@ -79,6 +79,7 @@
                         <input type="hidden" id="startTimeRaw" name="startTimeRaw" value="00:00">
                         <input type="hidden" id="endTime" name="endTime" value="00:00">
                         <input type="hidden" id="totalTime" name="totalTime" value="00:00">
+                        <audio style="display:none;" autoplay="true" src="audio/success.mp3">
                     </div>
                 </div>
                 <div class="input-field col s5">
