@@ -723,7 +723,7 @@
         //save total time to variable
         var startTime = Date.parse(document.getElementById("startTimeRaw").value)
         var totalTime = d - startTime;
-        var convertedTime = new Date(totalTime);
+        var convertedTime = new Date(totalTime).toISOString().slice(11,19);
         document.getElementById("totalTime").setAttribute("value", convertedTime);
         localStorage.setItem("totalTime", convertedTime.getHours() + ":" + convertedTime.getMinutes() + ":" + convertedTime.getSeconds());
         console.log("start time: " + document.getElementById("startTime").value);
