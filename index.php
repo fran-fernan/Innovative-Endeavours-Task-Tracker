@@ -692,9 +692,6 @@
         var min = 0, sec = 0, hour = 0;
 
         setInterval(function(){
-            document.getElementById("seconds").innerHTML = (sec).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
-            document.getElementById("minutes").innerHTML = (min).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
-            document.getElementById("hours").innerHTML = (hour).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
             if (sec > "59"){
                 sec = 0;
                 min++;
@@ -706,6 +703,9 @@
                 min = 0;
                 hour++;
             }
+            document.getElementById("seconds").innerHTML = (sec).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
+            document.getElementById("minutes").innerHTML = (min).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
+            document.getElementById("hours").innerHTML = (hour).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
         }, 1000)
     }
 
