@@ -138,9 +138,9 @@
             $query = "SELECT * from tasks;";
             $result = mysqli_query($conn, $query);
 
-            //echo "<div class="input-field col s2">";
+            echo "<div class="col s10">";
             echo "hello";
-            //echo "</div>"
+            echo "</div>"
             /*
             echo "<h6><table id='tasks' data-vertable='ver5' class="striped">";
             echo "<tr><th>Name</th>";
