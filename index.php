@@ -140,17 +140,17 @@
 
             echo "<div class='col 10'>";
             echo "<table>";
-            echo "<tr><th>Date</th></tr>";
-            echo "<tr><th>Time Start</th></tr>";
-            echo "<tr><th>Time End</th></tr>";
-            echo "<tr><th>Time Total</th></tr>";
+            echo "<tr><th>Date</th>";
+            echo "<th>Time Start</th>";
+            echo "<th>Time End</th>";
+            echo "<th>Time Total</th></tr>";
 
 
             echo "</table>";
             echo "</div>";
             /*
             echo "<h6><table id='tasks' data-vertable='ver5' class="striped">";
-            echo "<tr><th>Name</th>";
+            echo "<><th>Name</th>";
             echo "<th>Date</th>";
             echo "<th>Time Start</th>";
             echo "<th>Time End</th>";
