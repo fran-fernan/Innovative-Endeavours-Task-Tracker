@@ -105,39 +105,42 @@
 
     <div id="history" class="tabcontent">
         <h5><center>Task History</center></h5>
-        <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-        <div class="input-field col s2">
-            <p><label>
-                <input class="with-gap" name="name" type="radio" value="Christian" onclick="NameRequired()"
-                    required />
-                <span class="black-text" style="font-size:16px;">Christian</span>
-            </label></p>
-            <p><label>
-                <input class="with-gap" name="name" type="radio" value="Ghazi" onclick="NameRequired()" />
-                <span class="black-text" style="font-size:16px;">Ghazi</span>
-            </label></p>
-            <p><label>
-                <input class="with-gap" name="name" type="radio" value="Jessie" onclick="NameRequired()" />
-                <span class="black-text" style="font-size:16px;">Jessie</span>
-            </label></p>
-            <p><label>
-                <input class="with-gap" name="name" type="radio" value="Violeta" onclick="NameRequired()" />
-                <span class="black-text" style="font-size:16px;">Violeta</span>
-            </label></p>
-            <p><label>
-                <input class="with-gap" name="name" type="radio" value="Zayanna" onclick="NameRequired()" />
-                <span class="black-text" style="font-size:16px;">Zayanna</span>
-            </label></p>
-            <input type="submit">
-        </div>
-        </form>
+        <div class="container jobs row">
+            <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                <div class="input-field col s2">
+                    <p><label>
+                        <input class="with-gap" name="name" type="radio" value="Christian" onclick="NameRequired()"
+                            required />
+                        <span class="black-text" style="font-size:16px;">Christian</span>
+                    </label></p>
+                    <p><label>
+                        <input class="with-gap" name="name" type="radio" value="Ghazi" onclick="NameRequired()" />
+                        <span class="black-text" style="font-size:16px;">Ghazi</span>
+                    </label></p>
+                    <p><label>
+                        <input class="with-gap" name="name" type="radio" value="Jessie" onclick="NameRequired()" />
+                        <span class="black-text" style="font-size:16px;">Jessie</span>
+                    </label></p>
+                    <p><label>
+                        <input class="with-gap" name="name" type="radio" value="Violeta" onclick="NameRequired()" />
+                        <span class="black-text" style="font-size:16px;">Violeta</span>
+                    </label></p>
+                    <p><label>
+                        <input class="with-gap" name="name" type="radio" value="Zayanna" onclick="NameRequired()" />
+                        <span class="black-text" style="font-size:16px;">Zayanna</span>
+                    </label></p>
+                    <input type="submit">
+                </div>
+            </form>
         <?php
             require_once 'config.php';
         
             $query = "SELECT * from tasks;";
             $result = mysqli_query($conn, $query);
 
+            echo "<div class="input-field col s2">";
             echo "hello";
+            echo "</div>"
             /*
             echo "<h6><table id='tasks' data-vertable='ver5' class="striped">";
             echo "<tr><th>Name</th>";
@@ -631,6 +634,7 @@
         echo "</table></h6>";
         */
             ?>
+    </div>
     </div>
 
     <div id="admin" class="tabcontent">
