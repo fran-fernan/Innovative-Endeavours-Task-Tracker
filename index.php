@@ -134,7 +134,7 @@
         </div>
         </form>
         <?php
-        /*
+        
         require_once 'config.php';
 
         $query = "SELECT * from tasks;";
@@ -148,9 +148,9 @@
         echo "<th>Time Total</th>";
 
         echo "<tr><td><script>document.querySelector('input[name="name"]:checked').value;</script><td>";
-        $query = "SELECT * FROM tasks WHERE name='$salarieid = $_POST['name'];'"
+        //$query = "SELECT * FROM tasks WHERE name='$salarieid = $_POST['name'];'"
         */
-        /*
+        
         require_once 'config.php';
 
         $week = date("W");
