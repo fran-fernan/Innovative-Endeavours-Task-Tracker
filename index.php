@@ -104,9 +104,7 @@
     </div>
 
     <div id="history" class="tabcontent">
-        <h5>
-            <center>Task History</center>
-        </h5>
+        <h5><center>Task History</center></h5>
         <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
         <div class="input-field col s2">
             <p><label>
@@ -134,7 +132,20 @@
         </div>
         </form>
         <?php
+            require_once 'config.php';
+        
+            $query = "SELECT * from tasks;";
+            $result = mysqli_query($conn, $query);
 
+            echo "hello";
+            /*
+            echo "<h6><table id='tasks' data-vertable='ver5' class="striped">";
+            echo "<tr><th>Name</th>";
+            echo "<th>Date</th>";
+            echo "<th>Time Start</th>";
+            echo "<th>Time End</th>";
+            echo "<th>Time Total</th>";
+            */
         /*
         echo "<tr><td><script>document.querySelector('input[name="name"]:checked').value;</script><td>";
         $query = "SELECT * FROM tasks WHERE name='$salarieid = $_POST['name'];'"
@@ -619,7 +630,7 @@
 
         echo "</table></h6>";
         */
-        ?>
+            ?>
     </div>
 
     <div id="admin" class="tabcontent">
