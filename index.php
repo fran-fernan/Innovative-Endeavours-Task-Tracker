@@ -139,14 +139,14 @@
         
         $query = "SELECT * from tasks;";
         $result = mysqli_query($conn, $query);
-        /*
+        
         echo "<h6><table id='tasks' data-vertable='ver5' class="striped">";
         echo "<tr><th>Name</th>";
         echo "<th>Date</th>";
         echo "<th>Time Start</th>";
         echo "<th>Time End</th>";
         echo "<th>Time Total</th>";
-
+        /*
         echo "<tr><td><script>document.querySelector('input[name="name"]:checked').value;</script><td>";
         $query = "SELECT * FROM tasks WHERE name='$salarieid = $_POST['name'];'"
         */
