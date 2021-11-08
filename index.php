@@ -139,7 +139,7 @@
             $result = mysqli_query($conn, $query);
 
             echo "<div class='col 10'>";
-            echo "<table style='margin: 0px auto;'>";
+            echo "<table align='center' style='margin: 0px auto;'>";
             echo "<tr><th>Date</th>";
             echo "<th>Time Start</th>";
             echo "<th>Time End</th>";
