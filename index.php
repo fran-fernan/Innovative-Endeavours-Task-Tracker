@@ -138,7 +138,7 @@
             $query = "SELECT * from tasks;";
             $result = mysqli_query($conn, $query);
 
-            echo "<div>";
+            echo "<div class='col 10'>";
             echo "<table>";
             echo "<tr><th>Name</th></tr>";
             echo "</table>";
