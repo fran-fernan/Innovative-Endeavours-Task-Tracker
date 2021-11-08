@@ -134,7 +134,6 @@
         </div>
         </form>
         <?php
-        
         require_once 'config.php';
         
         $query = "SELECT * from tasks;";
