@@ -140,7 +140,12 @@
 
             echo "<div class='col 10'>";
             echo "<table>";
-            echo "<tr><th>Name</th></tr>";
+            echo "<tr><th>Date</th></tr>";
+            echo "<tr><th>Time Start</th></tr>";
+            echo "<tr><th>Time End</th></tr>";
+            echo "<tr><th>Time Total</th></tr>";
+
+
             echo "</table>";
             echo "</div>";
             /*
