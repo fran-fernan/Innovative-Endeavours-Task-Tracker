@@ -139,14 +139,14 @@
             $result = mysqli_query($conn, $query);
 
             echo "<div class='col 10'>";
-            echo "<center><table>";
+            echo "<table style='margin-left:auto;margin-right:auto;'>";
             echo "<tr><th>Date</th>";
             echo "<th>Time Start</th>";
             echo "<th>Time End</th>";
             echo "<th>Time Total</th></tr>";
 
 
-            echo "</table></center>";
+            echo "</table>";
             echo "</div>";
             /*
             echo "<h6><table id='tasks' data-vertable='ver5' class="striped">";
