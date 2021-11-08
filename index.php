@@ -140,6 +140,7 @@
 
             echo "hello";
             echo "<table>";
+            echo "<tr><th>Name</th></tr>";
             echo "</table>";
             /*
             echo "<h6><table id='tasks' data-vertable='ver5' class="striped">";
