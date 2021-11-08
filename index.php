@@ -139,7 +139,7 @@
             $query = "SELECT * from tasks;";
             $result = mysqli_query($conn, $query);
 
-            echo "hello";
+            //echo "hello";
             echo "<h6><table id='tasks' data-vertable='ver5' class="striped">";
             echo "<tr><th>Name</th>";
             echo "<th>Date</th>";
