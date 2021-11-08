@@ -139,7 +139,7 @@
             $result = mysqli_query($conn, $query);
 
             echo "hello";
-            echo "<table id="tasks" data-vertable="ver5" class="striped">";
+            echo "<table>";
             echo "</table>";
             /*
             echo "<h6><table id='tasks' data-vertable='ver5' class="striped">";
