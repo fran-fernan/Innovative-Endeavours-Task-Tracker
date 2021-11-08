@@ -79,9 +79,6 @@
                         <input type="hidden" id="startTimeRaw" name="startTimeRaw" value="00:00">
                         <input type="hidden" id="endTime" name="endTime" value="00:00">
                         <input type="hidden" id="totalTime" name="totalTime" value="00:00">
-                        <audio hidden autoplay>
-                            <source src="http://fefranci.dev.fast.sheridanc.on.ca/IETTT/audio/success.mp3" type="audio/mpeg">
-                        </audio>
                     </div>
                 </div>
                 <div class="input-field col s5">

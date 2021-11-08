@@ -80,6 +80,9 @@ header("Location:index.php?result=fail");
 </head>
 
 <body>
+    <audio hidden autoplay>
+        <source src="http://fefranci.dev.fast.sheridanc.on.ca/IETTT/audio/success.mp3" type="audio/mpeg">
+    </audio>
     <nav>
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">&nbsp;&nbsp;&nbsp;Innovative Endeavors Task Tracker</a>
