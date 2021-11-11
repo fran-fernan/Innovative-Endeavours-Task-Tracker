@@ -104,7 +104,6 @@
     </div>
 
     <div id="history" class="tabcontent">
-        <h5><center>Task History</center></h5>
         <div class="container jobs row">
             <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
                 <div class="input-field col s2">
@@ -138,8 +137,8 @@
             $query = "SELECT * from tasks;";
             $result = mysqli_query($conn, $query);
 
-            echo "<div class='col 10'>";
-            echo "<table align='center' style='margin: 0px auto;'>";
+            echo "<div class='col 8'>";
+            echo "<table align='center' style='margin: 0px auto;background-color:#e57373'>";
             echo "<tr><th>Date</th>";
             echo "<th>Time Start</th>";
             echo "<th>Time End</th>";
