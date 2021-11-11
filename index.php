@@ -138,8 +138,8 @@
             $result = mysqli_query($conn, $query);
 
             echo "<div class='col 8'>";
-            echo "<table align='center' style='margin: 0px auto;background-color:#e57373'>";
-            echo "<tr><th>Date</th>";
+            echo "<table align='center' style='margin: 0px auto;'>";
+            echo "<tr style='background-color:#e57373'><th>Date</th>";
             echo "<th>Time Start</th>";
             echo "<th>Time End</th>";
             echo "<th>Time Total</th></tr>";
