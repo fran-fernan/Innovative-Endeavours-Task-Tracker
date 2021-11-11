@@ -15,7 +15,7 @@ td {
 }
 
 tr:nth-child(even) {
-  background-color: rgba(188, 253, 145, 0.7);
+  background-color: #e57373;
 }
 
 th {
@@ -180,7 +180,7 @@ p {
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: rgba(128, 193, 85, 1);
+  background-color: #e57373;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
