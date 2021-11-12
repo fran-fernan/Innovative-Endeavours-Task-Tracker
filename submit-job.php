@@ -89,7 +89,7 @@ header("Location:index.php?result=fail");
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a class="tablinks" onclick="openTab(event, 'tasks')" id="<?php echo $defaultOpen; ?>">tasks</a>
                 </li>
-                <li><a class="tablinks" onclick="openTab(event, 'history')"
+                <li><a class="tablinks" href="index.php?result=success"
                         id="<?php echo $defaultOpenSuccess; ?>">history</a></li>
                 <li><a class="tablinks" onclick="openTab(event, 'admin')">admin</a></li>
             </ul>
