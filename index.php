@@ -140,7 +140,7 @@
                 $result = mysqli_query($conn, $query);
 
                 echo "<div class='col 6'>";
-                echo "<table style='width:20%;'>";
+                echo "<table style='width:200px;'>";
                 echo "<tr><th>Date</th>";
                 echo "<th>Task</th>";
                 echo "<th>Time Start</th>";
