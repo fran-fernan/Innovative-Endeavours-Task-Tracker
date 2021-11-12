@@ -149,7 +149,7 @@
                 
                 echo "<tr><td>";
                 $name = $_POST['name'];
-                $query = "Select * from tasks where name=$name";
+                $query = "Select * from tasks where name='$name'";
                 $result = mysqli_query($conn, $query);
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo $row["date"] . "</td>";
