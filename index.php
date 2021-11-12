@@ -130,7 +130,7 @@
                     <div style="line-height:150%;">
                         <br>
                     </div>
-                    <input type="submit">
+                    <input type="submit" class="button" value="Pick Name">
                 </div>
             </form>
             <?php
@@ -162,7 +162,6 @@
                 
                 echo "</div>";
                 echo "</table>";
-                echo $name;
             /*
             echo "<h6><table id='tasks' data-vertable='ver5' class="striped">";
             echo "<><th>Name</th>";
