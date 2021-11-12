@@ -132,7 +132,7 @@
                 </div>
             </form>
         </div>
-        <div style="padding: 100px;">
+        <div style="padding: 20px;">
             <?php
                 require_once 'config.php';
         
