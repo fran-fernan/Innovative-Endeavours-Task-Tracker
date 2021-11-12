@@ -133,7 +133,6 @@
                     <input type="submit">
                 </div>
             </form>
-        </div>
             <?php
                 require_once 'config.php';
         
@@ -642,6 +641,7 @@
         echo "</table></h6>";
         */
             ?>
+        </div>
     </div>
 
     <div id="admin" class="tabcontent">
