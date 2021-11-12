@@ -153,8 +153,10 @@
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo "<tr style='background-color:#f0f0f0'><td>" . $row["date"] . "</td>";
                     echo "<td>" . $row["task"] . "</td>";
-                    echo "<td>" . $row["time_start"] . "</td>";
-                    echo "<td>" . $row["time_end"] . "</td>";
+                    $amPmStart = date("g:i:s a", strtotime($row["time_start"]));
+                    echo "<td>" . $amPmStart . "</td>";
+                    $amPmEnd = date("g:i:s a", strtotime($row["time_end"]));
+                    echo "<td>" . $amPmEnd . "</td>";
                     $time_diff = strtotime($row["time_end"]) - strtotime($row["time_start"]);
 
                     echo "<td>" . gmdate("H:i:s", $time_diff) . "</td></tr>";
