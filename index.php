@@ -150,7 +150,9 @@
                 echo "<tr><td>";
                 $query = "Select * from tasks where name='Zayanna'";
                 $result = mysqli_query($conn, $query);
-                echo $row['date'] . "</td>";
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo $row["date"] . "</td>";
+                }
 
                 echo "</div>";
                 echo "</table>";
