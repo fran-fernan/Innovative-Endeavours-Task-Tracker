@@ -144,7 +144,7 @@
                 echo "<tr><th>Date</th>";
                 echo "<th>Task</th>";
                 echo "<th>Time Start</th>";
-                echo "<th>Time End</th>";
+                echo "<th>Time Finish</th>";
                 echo "<th>Time Total</th></tr>";
                 /*
                 echo "<tr><td>";
