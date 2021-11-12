@@ -157,6 +157,7 @@
                 
                 echo "</div>";
                 echo "</table>";
+                echo $name;
             /*
             echo "<h6><table id='tasks' data-vertable='ver5' class="striped">";
             echo "<><th>Name</th>";
