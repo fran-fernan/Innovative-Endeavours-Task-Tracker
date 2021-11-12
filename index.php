@@ -154,7 +154,10 @@
                     echo "<tr style='background-color:#f0f0f0'><td>" . $row["date"] . "</td>";
                     echo "<td>" . $row["task"] . "</td>";
                     echo "<td>" . $row["time_start"] . "</td>";
-                    echo "<td>" . $row["time_end"] . "</td></tr>";
+                    echo "<td>" . $row["time_end"] . "</td>";
+                    $newTimeStart = date("h:m:s", strtotime($row["time_start"]));
+
+                    echo "<td>" . $newTimeStart . "</td></tr>";
                 }
                 
                 echo "</div>";
