@@ -155,7 +155,8 @@
                     echo "<td>" . $row["task"] . "</td>";
                     echo "<td>" . $row["time_start"] . "</td>";
                     echo "<td>" . $row["time_end"] . "</td>";
-                    $newTimeStart = date("h:m:s", strtotime($row["time_start"]));
+                    $time_diff = strtotime($row["time_start"]) - strtotime($row["time_end"]);
+                    echo $time_diff;
 
                     echo "<td>" . $newTimeStart . "</td></tr>";
                 }
