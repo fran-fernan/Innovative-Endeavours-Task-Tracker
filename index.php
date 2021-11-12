@@ -140,11 +140,17 @@
                 $result = mysqli_query($conn, $query);
 
                 echo "<div>";
-                echo "<table style='width:50%;padding:100px'>";
+                echo "<table style='width:50%;'>";
                 echo "<tr><th>Date</th>";
+                echo "<tr><th>Task</th>";
                 echo "<th>Time Start</th>";
                 echo "<th>Time End</th>";
                 echo "<th>Time Total</th></tr>";
+
+                echo "<tr><td>";
+                $query = "Select * from tasks where name='Zayanna'";
+                $result = mysqli_query($conn, $query);
+                echo $row['date'] . "</td>";
 
                 echo "</div>";
                 echo "</table>";
