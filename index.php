@@ -140,13 +140,14 @@
                 $query = "SELECT * from tasks;";
                 $result = mysqli_query($conn, $query);
 
+                echo "<div>";
                 echo "<table style='width:200px;'>";
                 echo "<tr><th>Date</th>";
                 echo "<th>Time Start</th>";
                 echo "<th>Time End</th>";
                 echo "<th>Time Total</th></tr>";
 
-
+                echo "</div>";
                 echo "</table>";
             /*
             echo "<h6><table id='tasks' data-vertable='ver5' class="striped">";
