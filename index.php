@@ -151,7 +151,7 @@
                 $query = "Select * from tasks where name='$name'";
                 $result = mysqli_query($conn, $query);
                 while ($row = mysqli_fetch_assoc($result)) {
-                    echo "<tr style='background-color:#FF0000'><td>" . $row["date"] . "</td>";
+                    echo "<tr style='background-color:#d1d1d1'><td>" . $row["date"] . "</td>";
                     echo "<td>" . $row["task"] . "</td>";
                     echo "<td>" . $row["time_start"] . "</td>";
                     echo "<td>" . $row["time_end"] . "</td></tr>";
