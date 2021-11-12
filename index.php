@@ -140,7 +140,7 @@
                 $query = "SELECT * from tasks;";
                 $result = mysqli_query($conn, $query);
 
-                echo "<table>";
+                echo "<table style='width:200px;'>";
                 echo "<tr><th>Date</th>";
                 echo "<th>Time Start</th>";
                 echo "<th>Time End</th>";
