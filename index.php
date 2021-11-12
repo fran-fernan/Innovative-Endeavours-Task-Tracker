@@ -148,7 +148,7 @@
                 echo "<th>Time Total</th></tr>";
                 
                 echo "<tr><td>";
-                $query = "Select * from tasks where name=$_POST['name']";
+                $query = "Select * from tasks where name='$_POST['name']'";
                 $result = mysqli_query($conn, $query);
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo $row["date"] . "</td>";
