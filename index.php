@@ -146,14 +146,14 @@
                 echo "<th>Time Start</th>";
                 echo "<th>Time End</th>";
                 echo "<th>Time Total</th></tr>";
-
+                /*
                 echo "<tr><td>";
                 $query = "Select * from tasks where name='Zayanna'";
                 $result = mysqli_query($conn, $query);
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo $row["date"] . "</td>";
                 }
-
+                */
                 echo "</div>";
                 echo "</table>";
             /*
