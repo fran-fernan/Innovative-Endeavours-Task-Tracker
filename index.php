@@ -157,7 +157,7 @@
                     echo "<td>" . $row["time_end"] . "</td>";
                     $time_diff = strtotime($row["time_end"]) - strtotime($row["time_start"]);
 
-                    echo "<td>" . $time_diff . "</td></tr>";
+                    echo "<td>" . gmdate("H:i:s", $time_diff) . "</td></tr>";
                 }
                 
                 echo "</div>";
