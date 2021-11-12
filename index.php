@@ -155,9 +155,9 @@
                     echo "<td>" . $row["task"] . "</td>";
                     echo "<td>" . $row["time_start"] . "</td>";
                     echo "<td>" . $row["time_end"] . "</td>";
-                    $time_diff = strtotime($row["time_start"]) - strtotime($row["time_end"]);
+                    $time_diff = strtotime($row["time_end"]) - strtotime($row["time_start"]);
 
-                    echo "<td>" . date ('H:i:s',strtotime($time_diff)) . "</td></tr>";
+                    echo "<td>" . date ('h:i:s',strtotime($time_diff)) . "</td></tr>";
                 }
                 
                 echo "</div>";
