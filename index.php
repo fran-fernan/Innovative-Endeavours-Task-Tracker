@@ -147,15 +147,14 @@
                 echo "<th>Time Finish</th>";
                 echo "<th>Time Total</th></tr>";
                 
-                echo "<tr>";
                 $name = $_POST['name'];
                 $query = "Select * from tasks where name='$name'";
                 $result = mysqli_query($conn, $query);
                 while ($row = mysqli_fetch_assoc($result)) {
-                    echo "<td>" . $row["date"] . "</td>";
+                    echo "<tr style='background-color:#000;'><td>" . $row["date"] . "</td>";
                     echo "<td>" . $row["task"] . "</td>";
                     echo "<td>" . $row["time_start"] . "</td>";
-                    echo "<td>" . $row["time_end"] . "</td>";
+                    echo "<td>" . $row["time_end"] . "</td></tr>";
                 }
                 
                 echo "</div>";
