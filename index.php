@@ -156,9 +156,8 @@
                     echo "<td>" . $row["time_start"] . "</td>";
                     echo "<td>" . $row["time_end"] . "</td>";
                     $time_diff = strtotime($row["time_start"]) - strtotime($row["time_end"]);
-                    echo $time_diff;
 
-                    echo "<td>" . $newTimeStart . "</td></tr>";
+                    echo "<td>" . $time_diff . "</td></tr>";
                 }
                 
                 echo "</div>";
