@@ -130,7 +130,7 @@
                     <div style="line-height:150%;">
                         <br>
                     </div>
-                    <input type="submit" class="button" style="padding: 5px 15px;font-size: 18px;" value="Pick Name">
+                    <input type="submit" class="button" style="padding: 3px 15px;font-size: 18px;background-color: #e57373" value="Pick Name">
                 </div>
             </form>
             <?php
