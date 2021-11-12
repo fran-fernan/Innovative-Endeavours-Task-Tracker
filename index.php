@@ -139,7 +139,7 @@
 
             echo "<div class='col 8'>";
             echo "<table align='center' style='margin: 0px auto;'>";
-            echo "<tr style='#000';><th>Date</th>";
+            echo "<tr><th>Date</th>";
             echo "<th>Time Start</th>";
             echo "<th>Time End</th>";
             echo "<th>Time Total</th></tr>";
