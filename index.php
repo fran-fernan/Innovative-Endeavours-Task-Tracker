@@ -139,10 +139,10 @@
                 $query = "SELECT * from tasks;";
                 $result = mysqli_query($conn, $query);
 
-                echo "<div class='col 6'>";
-                echo "<table style='width:20%;'>";
+                echo "<div>";
+                echo "<table style='width:50%;'>";
                 echo "<tr><th>Date</th>";
-                echo "<th>Task</th>";
+                echo "<tr><th>Task</th>";
                 echo "<th>Time Start</th>";
                 echo "<th>Time End</th>";
                 echo "<th>Time Total</th></tr>";
