@@ -137,7 +137,7 @@
             $query = "SELECT * from tasks;";
             $result = mysqli_query($conn, $query);
 
-            echo "<div class='col 8'>";
+            echo "<div class='col 2'>";
             echo "<table align='center' style='margin: 0px auto;'>";
             echo "<tr><th>Date</th>";
             echo "<th>Time Start</th>";
