@@ -142,7 +142,7 @@
                 echo "<div>";
                 echo "<table style='width:50%;'>";
                 echo "<tr><th>Date</th>";
-                echo "<tr><th>Task</th>";
+                echo "<th>Task</th>";
                 echo "<th>Time Start</th>";
                 echo "<th>Time End</th>";
                 echo "<th>Time Total</th></tr>";
