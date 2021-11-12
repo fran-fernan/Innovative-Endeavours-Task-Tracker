@@ -140,20 +140,20 @@
                 $result = mysqli_query($conn, $query);
 
                 echo "<div>";
-                echo "<table style='table-layout: fixed;width:80%;text-align:center;'>";
+                echo "<table style='table-layout: fixed;width:80%;'>";
                 echo "<tr><th>Date</th>";
                 echo "<th>Task</th>";
                 echo "<th>Time Start</th>";
                 echo "<th>Time Finish</th>";
                 echo "<th>Time Total</th></tr>";
-                /*
+                
                 echo "<tr><td>";
-                $query = "Select * from tasks where name='Zayanna'";
+                $query = "Select * from tasks where name=$_POST['name']";
                 $result = mysqli_query($conn, $query);
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo $row["date"] . "</td>";
                 }
-                */
+                
                 echo "</div>";
                 echo "</table>";
             /*
