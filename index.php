@@ -127,7 +127,7 @@
                         <input class="with-gap" name="name" type="radio" value="Zayanna" onclick="NameRequired()" />
                         <span class="black-text" style="font-size:16px;">Zayanna</span>
                     </label></p>
-                    <div style="line-height:250%;">
+                    <div style="line-height:150%;">
                         <br>
                     </div>
                     <input type="submit">
@@ -145,7 +145,6 @@
                 echo "<th>Time Start</th>";
                 echo "<th>Time End</th>";
                 echo "<th>Time Total</th></tr>";
-                echo "<tr><td></td>";
 
 
                 echo "</table>";
