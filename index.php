@@ -139,7 +139,7 @@
                 $query = "SELECT * from tasks;";
                 $result = mysqli_query($conn, $query);
 
-                echo "<div class='col 10'>";
+                echo "<div class='col 6'>";
                 echo "<table style='width:50%;'>";
                 echo "<tr><th>Date</th>";
                 echo "<th>Task</th>";
