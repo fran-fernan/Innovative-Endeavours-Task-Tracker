@@ -104,7 +104,7 @@
 
     <div id="history" class="tabcontent">
         <div class="container jobs row">
-            <form method="post" action="header('Location:index.php?result=success')">
+            <form method="post" action="index.php?result=success">
                 <div class="input-field col s2">
                     <p><label>
                         <input class="with-gap" name="name" type="radio" value="Christian" onclick="NameRequired()"
