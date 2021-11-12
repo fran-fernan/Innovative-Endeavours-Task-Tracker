@@ -137,12 +137,13 @@
             $query = "SELECT * from tasks;";
             $result = mysqli_query($conn, $query);
 
-            echo "<div class='col 2'>";
+            echo "<div style='padding: 100px;'>";
             echo "<table align='center' style='margin: 0px auto;'>";
             echo "<tr><th>Date</th>";
             echo "<th>Time Start</th>";
             echo "<th>Time End</th>";
             echo "<th>Time Total</th></tr>";
+            echo "<tr><td></td>";
 
 
             echo "</table>";
