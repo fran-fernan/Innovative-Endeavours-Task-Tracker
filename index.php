@@ -101,7 +101,6 @@
             </form>
         </div>
     </div>
-    </div>
 
     <div id="history" class="tabcontent">
         <div class="container jobs row">
