@@ -131,23 +131,23 @@
                     <input type="submit">
                 </div>
             </form>
-        <?php
-            require_once 'config.php';
+        </div>
+        <div style="padding: 100px;">
+            <?php
+                require_once 'config.php';
         
-            $query = "SELECT * from tasks;";
-            $result = mysqli_query($conn, $query);
+                $query = "SELECT * from tasks;";
+                $result = mysqli_query($conn, $query);
 
-            echo "<div style='padding: 100px;'>";
-            echo "<table align='center' style='margin: 0px auto;'>";
-            echo "<tr><th>Date</th>";
-            echo "<th>Time Start</th>";
-            echo "<th>Time End</th>";
-            echo "<th>Time Total</th></tr>";
-            echo "<tr><td></td>";
+                echo "<table align='center' style='margin: 0px auto;'>";
+                echo "<tr><th>Date</th>";
+                echo "<th>Time Start</th>";
+                echo "<th>Time End</th>";
+                echo "<th>Time Total</th></tr>";
+                echo "<tr><td></td>";
 
 
-            echo "</table>";
-            echo "</div>";
+                echo "</table>";
             /*
             echo "<h6><table id='tasks' data-vertable='ver5' class="striped">";
             echo "<><th>Name</th>";
@@ -641,7 +641,7 @@
         echo "</table></h6>";
         */
             ?>
-    </div>
+        </div>
     </div>
 
     <div id="admin" class="tabcontent">
